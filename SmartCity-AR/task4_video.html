@@ -23,14 +23,17 @@
                 gltf-model="#buggy"
                 >
                 </a-entity>
-				<!-- entity to the video -->
-				<a-video src="#myvideo width=16 height=9 position=0 0 -20"></a-video>
+				
 				 <!-- second entity: reference to the above audio -->
                 <a-entity sound="src: #crazyfrogsound; volume: 1; loop: true">
                 </a-entity>
 				
             </a-marker>
-
+			
+				<!-- entity to the video -->
+				<a-entity video src="#myvideo width=16 height=9 position=0 0 -20"></a-entity video>
+				
+				
             <!-- add a camera to the scene that renders the objects for us -->
             <a-entity camera></a-entity>
         </a-scene>
